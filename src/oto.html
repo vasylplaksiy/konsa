@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>news</title>
+
+	@@include('include/settings/head_meta_tags.html')
+
+	@@include('include/settings/head_connect_files.html')
+
+</head>
+<body>
+
+@@include('include/global/header.html')
+
+
+<div class="wrapContent">
+	<div class="content wide">
+
+		<h1 class="pageTitle v2">Ещё один клик и курс ваш</h1>
+
+		<div class="order otoPage">
+			<div class="orderContent">
+				<div class='videoContainer'>
+					<iframe
+						src='https://kinescope.io/embed/200537190?autoplay=1&muted=true&loop=true&playsinline=true&texttrack=true'
+						frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="orderSidebar">
+				<div class="orderSidebarTitle">СТОИМОСТЬ</div>
+				<div class="orderSidebarRow">
+					<div class="orderSidebarRowTitle">ЦЕНА</div>
+					<div class="orderSidebarRowVal"><span id="starts">1 900Р.</span></div>
+				</div>
+				<div class="orderSidebarRow">
+					<div class="orderSidebarRowTitle">ИТОГ</div>
+					<div class="orderSidebarRowVal orderSidebarTotal" id="newSum">1 900Р.</div>
+				</div>
+				<button type="submit" onclick="tinkoffPayFunction()" name="send" value="payment" class="orderSidebarSubmit"
+				        id="orderSidebarSubmit" style="background-color: #e02a92;color:white;border-color: #e02a92">Оплатить
+				</button>
+				<a href="#" class="orderSidebarSubmitCancel">Нет, спасибо</a>
+			</div>
+
+			<input type="hidden" placeholder="Сумма заказа" name="amount" id="amountId" value="1900">
+			<!--<input type="hidden" placeholder="Сумма заказа" name="amount" id="amountId" value="1">-->
+			<input type="hidden" placeholder="Номер заказа" name="order" id="orderNumber" value="_5577">
+
+			<input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value="">
+
+		</div>
+
+
+		<div class="accordion">
+			<div class="accordionList">
+				<div class="accordionEl fixed">
+					<div class="accordionElTitle formTitle active">На какой срок это будет моим?
+					</div>
+					<div class="accordionElContent">
+						<div class="otoOptionsList">
+							<a href="#" target="_blank" class="otoOptionsEl">
+								<div class="otoOptionsElContent">
+									<div class="otoOptionsElTitle">
+										Now Is the Time to Think About Your Small-Business Success
+									</div>
+									<div class="otoOptionsElPrice">
+										8 800 руб.
+									</div>
+								</div>
+								<div class="otoOptionsElImg">
+									<img src="upload/1.jpg" alt="">
+								</div>
+							</a>
+							<a href="#" target="_blank" class="otoOptionsEl">
+								<div class="otoOptionsElContent">
+									<div class="otoOptionsElTitle">
+										Now Is the Time to Think About Your Small-Business Success
+									</div>
+									<div class="otoOptionsElPrice">
+										8 800 руб.
+									</div>
+								</div>
+								<div class="otoOptionsElImg">
+									<img src="upload/1.jpg" alt="">
+								</div>
+							</a>
+							<a href="#" target="_blank" class="otoOptionsEl">
+								<div class="otoOptionsElContent">
+									<div class="otoOptionsElTitle">
+										Now Is the Time to Think About Your Small-Business Success
+									</div>
+									<div class="otoOptionsElPrice">
+										8 800 руб.
+									</div>
+								</div>
+								<div class="otoOptionsElImg">
+									<img src="upload/1.jpg" alt="">
+								</div>
+							</a>
+							<a href="#" target="_blank" class="otoOptionsEl">
+								<div class="otoOptionsElContent">
+									<div class="otoOptionsElTitle">
+										Now Is the Time to Think About Your Small-Business Success
+									</div>
+									<div class="otoOptionsElPrice">
+										8 800 руб.
+									</div>
+								</div>
+								<div class="otoOptionsElImg">
+									<img src="upload/1.jpg" alt="">
+								</div>
+							</a>
+							<a href="#" target="_blank" class="otoOptionsEl">
+								<div class="otoOptionsElContent">
+									<div class="otoOptionsElTitle">
+										Now Is the Time to Think About Your Small-Business Success
+									</div>
+									<div class="otoOptionsElPrice">
+										8 800 руб.
+									</div>
+								</div>
+								<div class="otoOptionsElImg">
+									<img src="upload/1.jpg" alt="">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordionEl">
+					<div class="accordionElTitle formTitle">Как скачать, чтобы смотреть без интернета?</div>
+					<div class="accordionElContent">
+						<p>Никак :( у платформы такой функции нет. Поймите нас и авторов правильно, защита от пиратства. Спасибо
+							:) </p>
+					</div>
+				</div>
+				<div class="accordionEl">
+					<div class="accordionElTitle formTitle">Можно ли вернуть деньги, если не понравится?</div>
+					<div class="accordionElContent">
+						<p>Да, по запросу в чат всё сделаем. Займёт пару дней.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="otoBottom">
+			<div class="otoBottomBuy">Купить все курсы за 9 900 руб.</div>
+			<div class="otoBottomCancel">
+				<span>Так много мне не нужно, спасибо</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@@include('include/global/footer.html')
+
+@@include('include/settings/body_connect_files.html')
+
+</body>
+</html>

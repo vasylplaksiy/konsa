@@ -1,0 +1,76 @@
+.person {
+  padding: 21px;
+  border: 1px solid #ededed;
+  margin: 30px 0 0 0;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &Ava {
+    max-width: 120px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:after {
+      display: block;
+      padding: 100% 0 0 0;
+      content: "";
+    }
+    img {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+
+  &Title {
+    padding-top: 17px;
+    padding-bottom: 8px;
+
+    a {
+      font-size: 20px;
+      line-height: 21px;
+      font-weight: 700;
+      color: $yellow;
+      text-decoration: none;
+
+      &:hover {
+        color: $yellow;
+
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  &Link {
+    margin-bottom: 6px;
+
+    a {
+      font-size: 11px;
+      font-style: italic;
+      line-height: 21px;
+      color: $greyColor3;
+      text-decoration: none;
+
+      &:hover {
+        color: $yellow;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  &About {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  &Social {
+    margin: 5px 0 0 0;
+  }
+}

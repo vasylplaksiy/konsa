@@ -1,0 +1,248 @@
+.mainHeader {
+  background: #eee;
+  border-top: 6px solid #492582;
+  z-index: 110;
+  position: relative;
+
+  &Top {
+    line-height: 25px;
+    height: 45px;
+    padding: 10px 0 10px 0;
+    position: relative;
+    z-index: 11;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 0 1px #fff;
+    font-size: 114.285714286%;
+
+    &Nav {
+      float: right;
+
+      a {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 30px;
+      }
+    }
+  }
+
+  &Top &Phone {
+    float: left;
+  }
+  &Top &Inner {
+    padding-left: 150px;
+
+    @media all and (max-width: 1100px) {
+      padding-left: 10px;
+    }
+
+  }
+
+  &Basket {
+    &Counter {
+      font-style: normal;
+      display: inline-block;
+      min-width: 23px;
+      height: 22px;
+      padding: 1px 5px;
+      background: #009fe8;
+      color: #fff;
+      border-radius: 11px;
+      line-height: 21px;
+      margin-left: 5px;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    &Mobile {
+      display: none;
+    }
+  }
+
+  &Inner {
+    @extend .defWidth;
+
+  }
+
+  &Content {
+    height: 80px;
+    position: relative;
+  }
+  &Content &Inner {
+    position: static;
+  }
+
+  &Logo {
+    background: url("img/benq-logo-new.png");
+    width: 120px;
+    height: 80px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: top;
+  }
+
+  &Search {
+    background: #fff;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s linear;
+
+    &.active {
+      height: 110px;
+      overflow: visible;
+      padding: 25px 0;
+    }
+
+    &Content {
+      width: 800px;
+      margin: 0 auto;
+      position: relative;
+      input {
+        border: solid 1px #ccc;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        border-radius: 0;
+        width: 100%;
+        outline: none;
+        height: 60px;
+        padding: 19px 60px 19px 12px;
+        line-height: 20px;
+        background: #fff;
+        font-size: 16px;
+      }
+
+      button {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0px;
+        top: 0px;
+        background: 0;
+        border: 0;
+        border-radius: 0;
+        background-color: #492582;
+        color: transparent;
+        border: none;
+        line-height: 60px;
+        @extend .searchIcon;
+
+        &:before {
+          position: relative;
+          top: -2px;
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+
+    &Toggle {
+      display: block;
+      float: right;
+      width: 86px;
+      padding-left: 32px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 22px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+
+  @media all and (max-width: 959px) {
+    &Top {
+      display: none;
+    }
+
+    &Logo {
+      width: 20.5625%;
+      position: absolute;
+      padding-top: 13.75%;
+      left: 50%;
+      height: auto;
+      line-height: 0;
+      transform: translateX(-50%);
+      top: 0;
+      background: url("img/benq-logo-new-m.png") center no-repeat;
+      background-size: contain;
+    }
+
+    &Content {
+      padding-top: 15%;
+      height: auto;
+      border-bottom: .0714285714em solid #ccc;
+    }
+
+    &Search {
+      &Content {
+        width: 91.25%;
+      }
+      &Toggle {
+        display: block;
+        padding-top: 9.375%;
+        margin-top: 3.4375%;
+        width: 9.375%;
+        right: 22%;
+        top: 0;
+        position: absolute;
+        z-index: 15;
+        line-height: 8.75vw;
+        &:before {
+          font-size: 8.75vw;
+          line-height: 8.75vw;
+          vertical-align: top;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+
+    &Basket {
+      &Mobile {
+        display: block;
+        padding-top: 9.375%;
+        margin-top: 3.4375%;
+        width: 9.375%;
+        right: 3.125%;
+        top: 0;
+        position: absolute;
+        z-index: 15;
+        line-height: 8.75vw;
+        &:before {
+          font-size: 8.75vw;
+          line-height: 8.75vw;
+          vertical-align: top;
+          position: absolute;
+          top: 0;
+        }
+        &Counter {
+          background: #009fe8;
+          margin-left: 5px;
+          display: block;
+          color: #fff;
+          font-size: 5vw;
+          text-align: center;
+          font-style: normal;
+          line-height: 6vw;
+          min-width: 6.5625vw;
+          height: 6.5625vw;
+          border-radius: 3.3vw;
+          right: -22%;
+          position: absolute;
+          top: -20%;
+          padding: 2px 5px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 959px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media all and (max-width: 959px) {
+  body {
+    padding-top: calc(15vw + 7px);
+  }
+}

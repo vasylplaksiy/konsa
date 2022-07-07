@@ -1,0 +1,228 @@
+.form {
+  &Control {
+    outline: none;
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    transition: all .4s ease;
+    box-shadow: 0 0 0 #000;
+    text-shadow: 0 0 black;
+  }
+}
+
+.form {
+  display: block;
+  max-width: 770px;
+  margin: 0 auto;
+
+  &Ch {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+
+    input {
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 10px !important;
+    }
+
+    input:checked + label {
+      &:before {
+        background-color: #222222;
+        border-color: #222222;
+      }
+      &:after {
+        display: block;
+        transform: rotate(45deg);
+      }
+    }
+
+    label {
+      margin-bottom: 0;
+      position: relative;
+      cursor: pointer;
+      display: block;
+      padding: 2px 0 2px 30px;
+
+      b {
+        color: #000;
+        font-weight: 600;
+      }
+
+      span {
+        color: red;
+        font-weight: 500;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        height: 20px;
+        width: 20px;
+        z-index: 10;
+        border: 1px solid #000;
+        transition: all .4s ease;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        width: 6px;
+        height: 10px;
+        border: 2px solid #fff;
+        border-top: none;
+        border-left: none;
+        z-index: 10;
+        transform: rotate(0deg);
+        transition: all .4s ease;
+        display: none;
+      }
+    }
+  }
+
+  &Submit {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    background-color: #fcb800;
+    transition: all .4s ease;
+    cursor: pointer;
+    font-weight: 600;
+
+    &.w100 {
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #222;
+      color: #fff;
+    }
+  }
+
+  &Compact &Submit {
+    width: 100%;
+    display: block;
+  }
+
+  &Row {
+    display: table;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+
+    &Col {
+      float: left;
+      margin-bottom: 2.5rem;
+      width: 50%;
+      padding: 0 15px;
+
+      @media all and (max-width: 767px) {
+        float: none;
+        width: 100%;
+      }
+
+      &.wide {
+        width: 100%;
+        float: none;
+        display: block;
+      }
+
+      input, textarea {
+        height: auto;
+        padding: 2rem;
+        resize: none;
+        display: block;
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        padding: 0 20px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid #dddddd;
+        border-radius: 0;
+        transition: all .4s ease;
+        box-shadow: 0 0 0 #000;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 #000;
+          border-color: #fcb800;
+        }
+      }
+
+      textarea {
+        padding: 20px;
+        height: 150px;
+      }
+      input {
+        height: 50px;
+      }
+    }
+  }
+}
+
+.userAut {
+  max-width: 430px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  &Header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    span {
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 26px;
+      color: #666;
+      font-weight: 700;
+
+      &.active {
+        color: #000;
+      }
+    }
+  }
+
+  &Content {
+    padding: 30px;
+    background: #fff;
+  }
+
+  &Form {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &Title {
+      margin: 0 0 25px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+.rub {
+  &:after {
+    @extend .rub;
+    content: "a";
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "konsa_front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "browser-sync": "^2.27.9",
+    "browser-sync-client": "^2.27.9",
+    "browser-sync-ui": "^2.27.9",
+    "cookie": "^0.4.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "engine.io": "^6.1.3",
+    "engine.io-client": "^6.1.1",
+    "engine.io-parser": "^5.0.3",
+    "follow-redirects": "^1.14.9",
+    "json-schema": "^0.4.0",
+    "jsprim": "^1.4.2",
+    "localtunnel": "^2.0.2",
+    "minimist": "^1.2.6",
+    "socket.io": "^4.4.1",
+    "socket.io-adapter": "^2.3.3",
+    "socket.io-client": "^4.4.1",
+    "socket.io-parser": "^4.0.4",
+    "string-width": "^4.2.3",
+    "ua-parser-js": "^1.0.2",
+    "vary": "^1.1.2",
+    "ws": "^8.2.3",
+    "xmlhttprequest-ssl": "^2.0.0",
+    "yargs": "^17.4.1",
+    "yargs-parser": "^21.0.1",
+    "graceful-fs": "^4.2.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "cssnano": "^5.1.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-base64-inline": "^1.0.6",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasylplaksiy/konsa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasylplaksiy/konsa/issues"
+  },
+  "homepage": "https://github.com/vasylplaksiy/konsa#readme"
+}

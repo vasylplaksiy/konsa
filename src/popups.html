@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>news</title>
+
+	@@include('include/settings/head_meta_tags.html')
+
+	@@include('include/settings/head_connect_files.html')
+
+</head>
+<body>
+
+@@include('include/global/header.html')
+
+
+<div class="wrapContent">
+	<div class="content wide">
+
+		<h1 class="pageTitle v2">Попапы</h1>
+
+		<div class="textBox">
+			<ul>
+				<!--<li><span class="showPopup" data-popup=".logPopup">logPopup</span></li>-->
+				<!--<li><span class="showPopup" data-popup=".pswdPopup">pswdPopup</span></li>-->
+				<!--<li><span class="showPopup" data-popup=".orderCompletePopup">orderCompletePopup</span></li>-->
+				<!--<li><span class="showPopup" data-popup=".regPopup">regPopup</span></li>-->
+				<li><span class="showPopup" data-popup=".textPopup">textPopup</span></li>
+				<li><span class="showPopup" data-popup=".formPopup">formPopup</span></li>
+				<li><a class="showAjaxPopup" href="ajax/ajaxTextPopup.php">showAjaxPopup</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+@@include('include/course/popups.html')
+
+@@include('include/global/footer.html')
+
+@@include('include/settings/body_connect_files.html')
+
+</body>
+</html>

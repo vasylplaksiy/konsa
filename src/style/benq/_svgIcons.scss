@@ -1,0 +1,67 @@
+.iconFont {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  margin-right: 3px;
+}
+
+.contactsIcon:before {
+  @extend .iconFont;
+  content: "\e90e";
+  font-family: "icomoon" !important;
+  color: #65478a;
+}
+
+.basketIcon:before {
+  @extend .iconFont;
+  content: "\e907";
+  font-family: "icomoon" !important;
+  color: #65478a;
+}
+
+.logIcon:before {
+  @extend .iconFont;
+  content: "\e92a";
+  font-family: "icomoon" !important;
+  color: #65478a;
+}
+.searchIcon:before {
+  @extend .iconFont;
+  content: "\e906";
+  font-family: "icomoon" !important;
+  color: #65478a;
+}
+.prevIcon:before {
+  @extend .iconFont;
+  content: "\e910";
+  font-family: "icomoon" !important;
+  color: #979797;
+}
+.nextIcon:before {
+  @extend .iconFont;
+  content: "\e90f";
+  font-family: "icomoon" !important;
+  color: #979797;
+}
+.emailIcon:before {
+  @extend .iconFont;
+  content: "\e919";
+  font-family: "icomoon" !important;
+  color: #fff;
+}
+
+.checkboxIcon:before {
+  @extend .iconFont;
+  font-family: "icomoon" !important;
+  content: "\e903";
+  font-size: 21px;
+  color: #ddd;
+}
+
+.checkboxChIcon:before {
+  @extend .iconFont;
+  font-family: "icomoon" !important;
+  content: "\e902";
+  color: #492582;
+  font-size: 21px;
+}

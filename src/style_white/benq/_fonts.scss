@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'alsrubl';
+  src: url('fonts/r/rouble-webfont.eot');
+  src: url('fonts/r/rouble-webfont.woff') format('woff'),
+  url('fonts/r/rouble-webfont.ttf') format('truetype'),
+  url('fonts/r/rouble-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rub, .rub-type-symbol {
+  font-family: 'alsrubl';
+}
+
+i.rub, i.rub-type-symbol {
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon/icomoon.eot');
+  src: url('fonts/icomoon/icomoon.woff') format('woff'),
+  url('fonts/icomoon/icomoon.ttf') format('truetype'),
+  url('fonts/icomoon/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans Cyr';
+  src: url('fonts/gillsans/GillSansC.eot');
+  src: url('fonts/gillsans/GillSansC.eot?#iefix') format('embedded-opentype'),
+  url('fonts/gillsans/GillSansC.woff') format('woff'),
+  url('fonts/gillsans/GillSansC.woff2') format('woff2'),
+  url('fonts/gillsans/GillSansC.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans Cyr';
+  src: url('fonts/gillsans/GillSansC-Italic.eot');
+  src: url('fonts/gillsans/GillSansC-Italic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/gillsans/GillSansC-Italic.woff') format('woff'),
+  url('fonts/gillsans/GillSansC-Italic.woff2') format('woff2'),
+  url('fonts/gillsans/GillSansC-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gill Sans Cyr';
+  src: url('fonts/gillsans/GillSansC-Bold.eot');
+  src: url('fonts/gillsans/GillSansC-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/gillsans/GillSansC-Bold.woff') format('woff'),
+  url('fonts/gillsans/GillSansC-Bold.woff2') format('woff2'),
+  url('fonts/gillsans/GillSansC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans Cyr';
+  src: url('fonts/gillsans/GillSansC-BoldItalic.eot');
+  src: url('fonts/gillsans/GillSansC-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/gillsans/GillSansC-BoldItalic.woff') format('woff'),
+  url('fonts/gillsans/GillSansC-BoldItalic.woff2') format('woff2'),
+  url('fonts/gillsans/GillSansC-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
