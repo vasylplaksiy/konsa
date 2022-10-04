@@ -472,6 +472,7 @@
     }
 
     &Preview {
+      width: 100%;
 
       &List {
         margin: 20px 0 0 0;
@@ -479,6 +480,7 @@
         padding: 0 20px;
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
       }
 
       .slick-arrow {
@@ -510,6 +512,9 @@
         display: none !important;
       }
 
+      .slick-list {
+        width: 100%;
+      }
 
       &El {
         position: relative;
