@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>course</title>
+
+    @@include('include/settings/head_meta_tags.html')
+    @@include('include/settings/head_connect_files.html')
+  </head>
+  <body>
+    @@include('include/global/header.html')
+    @@include('include/main/videoBanner.html')
+
+    <div class="wrapContent">
+      <aside class="sidebar">
+        <div class="sidebarBox">
+          <!--<div class="sidebarBoxTitle">
+				Фильтр
+			</div>-->
+          <div class="sidebarBoxContent">
+            <form class="filter">
+              <div class="filterTitle">Filters</div>
+              <div class="filterClose"></div>
+              <div class="filterInner">
+                <div class="filterBox active">
+                  <div class="filterBoxTitle">
+                    <span>Availability</span>
+                  </div>
+                  <div class="filterBoxContent">
+                    <div class="filterList">
+                      <div class="filterCh">
+                        <input type="checkbox" id="cs2" />
+                        <label for="cs2">in London</label>
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="cs1" />
+                        <label for="cs1">In catalog</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterBox active">
+                  <div class="filterBoxTitle">
+                    <span>Brand</span>
+                  </div>
+                  <div class="filterBoxContent">
+                    <div class="filterList">
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch1" /><label for="ch1"
+                          >3/4</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch2" /><label for="ch2"
+                          >Base</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch3" /><label for="ch3"
+                          >Dreadnought</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch4" /><label for="ch4"
+                          >Folk</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch5" /><label for="ch5"
+                          >Grand Auditorium</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch6" /><label for="ch6"
+                          >Jumbo</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch7" /><label for="ch7"
+                          >Ovation</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch8" /><label for="ch8"
+                          >Parlor / 12 Fret</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch9" /><label for="ch9"
+                          >Travel</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterBox">
+                  <div class="filterBoxTitle">
+                    <span>Brand</span>
+                  </div>
+                  <div class="filterBoxContent">
+                    <div class="filterList">
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch1" /><label for="ch1"
+                          >3/4</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch2" /><label for="ch2"
+                          >Base</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch3" /><label for="ch3"
+                          >Dreadnought</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch4" /><label for="ch4"
+                          >Folk</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch5" /><label for="ch5"
+                          >Grand Auditorium</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch6" /><label for="ch6"
+                          >Jumbo</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch7" /><label for="ch7"
+                          >Ovation</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch8" /><label for="ch8"
+                          >Parlor / 12 Fret</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch9" /><label for="ch9"
+                          >Travel</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterBox fixed">
+                  <div class="filterBoxTitle">
+                    <span>Brand</span>
+                  </div>
+                  <div class="filterBoxContent">
+                    <div class="filterList">
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch1" /><label for="ch1"
+                          >3/4</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch2" /><label for="ch2"
+                          >Base</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch3" /><label for="ch3"
+                          >Dreadnought</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch4" /><label for="ch4"
+                          >Folk</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch5" /><label for="ch5"
+                          >Grand Auditorium</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch6" /><label for="ch6"
+                          >Jumbo</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch7" /><label for="ch7"
+                          >Ovation</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch8" /><label for="ch8"
+                          >Parlor / 12 Fret</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch9" /><label for="ch9"
+                          >Travel</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterBox">
+                  <div class="filterBoxTitle">
+                    <span>Brand</span>
+                  </div>
+                  <div class="filterBoxContent">
+                    <div class="filterList">
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch1" /><label for="ch1"
+                          >3/4</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch2" /><label for="ch2"
+                          >Base</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch3" /><label for="ch3"
+                          >Dreadnought</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch4" /><label for="ch4"
+                          >Folk</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch5" /><label for="ch5"
+                          >Grand Auditorium</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch6" /><label for="ch6"
+                          >Jumbo</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch7" /><label for="ch7"
+                          >Ovation</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch8" /><label for="ch8"
+                          >Parlor / 12 Fret</label
+                        >
+                      </div>
+                      <div class="filterCh">
+                        <input type="checkbox" id="ch9" /><label for="ch9"
+                          >Travel</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterOptions">
+                <button type="submit" class="filterSubmit">Show</button>
+                <!--<a href="#" class="filterClear">Очистить</a>-->
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+      <div class="content">
+        <article class="textBox borderBox">
+          <div class="videoBox textVideoAlign" align="left">
+            <iframe
+              src="https://kinescope.io/embed/200637875"
+              width="560"
+              height="315"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; encrypted-media;"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h1 class="pageTitle catalogPageTitle">Acoustic guitars</h1>
+
+          <p>
+            Choosing a musical instrument is a ritual! And we are still
+            sectarians;) The plan is this: choose a tool, we bring it to you,
+            put it in him a seal (lifetime guarantee), and then - only music. No
+            extra fuss. Don't have to think about the strings that hurt pinch!
+            Just you and the music. Isn't that why you came to us? ;)
+          </p>
+        </article>
+
+        <!--<div class="catalogOption">-->
+        <!--	<form class="catalogStock">
+				<div class="catalogStockTitle">Наличие:</div>
+				<div class="catalogStockCh">
+					<input type="checkbox" id="cs2">
+					<label for="cs2">в Москве</label>
+				</div>
+				<div class="catalogStockCh">
+					<input type="checkbox" id="cs3">
+					<label for="cs3">в СПБ</label>
+				</div>
+				<div class="catalogStockCh">
+					<input type="checkbox" id="cs1">
+					<label for="cs1">В каталоге</label>
+				</div>
+			</form>-->
+        <!--			<div class="pagination">
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<span>...</span>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</div>-->
+        <!--</div>-->
+
+        <div class="filterToggle"><span>Filter</span></div>
+
+        <div class="catalog">
+          <div class="catalogList">
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+                <div class="catalogElPriceCredit">10 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+            <div class="catalogEl">
+              <a href="#" class="catalogElImg">
+                <img
+                  class=""
+                  data-src="https://cdn.shopify.com/s/files/1/2403/8187/products/yontif-color-sage-pos-1_1200x.jpg?v=1611667257"
+                  alt=""
+                />
+              </a>
+              <div class="catalogElInfo">
+                <a href="#" class="catalogElName"
+                  >Electric guitar G&L Tribute Fallout Mint Green RW</a
+                >
+                <div class="catalogElRating rating">
+                  <i class="on"></i><i class="on"></i><i class="off"></i
+                  ><i class="off"></i><i class="off"></i>
+                </div>
+              </div>
+              <div class="catalogElPrice">
+                <div class="catalogElPriceCur">57 200</div>
+              </div>
+              <span class="catalogElBuy"><span>Buy</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogOption">
+          <span></span>
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>...</span>
+            <a href="#">5</a>
+            <a href="#">6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('include/global/footer.html')
+    @@include('include/settings/body_connect_files.html')
+  </body>
+</html>

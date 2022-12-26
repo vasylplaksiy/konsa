@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Semibold Italic'), local('Gilroy-Semibold-Italic'),
+        url('Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('Gilroy-SemiboldItalic.woff') format('woff'),
+        url('Gilroy-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }

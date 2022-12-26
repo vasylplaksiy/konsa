@@ -1,0 +1,122 @@
+.box {
+  padding: 50px 0;
+  overflow: hidden;
+
+  .repairPage & {
+    overflow: visible;
+  }
+
+  &.only1200p {
+    display: block;
+
+    @media all and (max-width: 1199px) {
+      overflow: hidden;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .boxContent{
+      background-color: #f1f1f1;
+    }
+
+    .catalogEl {
+      background-color: #f1f1f1;
+      border-color:#f1f1f1;
+    }
+
+  }
+
+  @media all and (max-width: 767px) {
+    padding: 50px 0;
+  }
+  @media all and (max-width: 479px) {
+    padding: 35px 0;
+  }
+
+  &.boxGrey {
+    background-color: #f4f5f5;
+
+    & + & {
+      padding-top: 0;
+    }
+  }
+
+  &Inner {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    .content & {
+      padding: 0;
+    }
+  }
+
+  &.boxGrey &Inner {
+    padding: 0 15px;
+    max-width: 1230px;
+  }
+
+  &Header {
+    margin-bottom: 65px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #ccc;
+
+    .repairPage & {
+      margin-bottom: 20px;
+    }
+  }
+
+  &Title {
+    margin-bottom: 0;
+    margin-right: 70px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.15;
+    font-family: $titleFont;
+    color: #0B0B0B;
+
+    @media all and (max-width: 959px) {
+      font-size: 24px;
+    }
+    @media all and (max-width: 959px) {
+      font-size: 20px;
+    }
+
+    @media all and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &Link {
+    float: right;
+    display: inline-block;
+    line-height: 21px;
+    margin: 4px 0 0 0;
+    padding-bottom: 2px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: all 0.4s ease;
+    text-decoration: none;
+
+    @media all and (max-width: 767px) {
+      float: none;
+    }
+  }
+
+  &Content {
+
+  }
+}
+
+.boxCatalogWrap{
+  padding-bottom: 0 !important;
+
+  .boxHeader {
+    margin: 0;
+  }
+}

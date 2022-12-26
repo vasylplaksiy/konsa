@@ -1,0 +1,36 @@
+.qnt {
+  width: 86px;
+  //margin-right: 10px;
+  display: flex;
+
+  &Minus, &Plus {
+    border: 1px solid #e5e5e5;
+    width: 28px;
+    line-height: 36px;
+    height: 38px;
+    transition: all .4s ease;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    color: $mainBlack;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background: $mainBlack;
+      border-color: $mainBlack;
+    }
+  }
+
+  &Val {
+    width: 30px;
+    display: block;
+    text-align: center;
+    height: 38px;
+    padding: 8px 0;
+    line-height: 20px;
+    margin: 0 auto;
+    border: solid 1px #e5e5e5;
+    border-width: 1px 0;
+  }
+}

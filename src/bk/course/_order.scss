@@ -1,0 +1,157 @@
+.order {
+  max-width: 1430px;
+  padding: 0;
+  margin: 40px auto 20px auto;
+  position: relative;
+  clear: both;
+  //overflow: hidden;
+  @extend .zeroBox;
+  align-items: flex-start;
+
+  &Content {
+    width: calc(100% - 340px);
+    padding: 0 15px 0 0;
+    vertical-align: top;
+    display: inline-block;
+    @extend .zeroBoxInner;
+
+    &.wide {
+      width: 100%;
+      padding: 0;
+    }
+
+    @media all and (max-width: 1140px) {
+      width: calc(100% - 250px);
+      &.wide {
+        width: 100%;
+      }
+    }
+  }
+
+  &Sidebar {
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    position: relative;
+    @extend .zeroBoxInner;
+
+    @media all and (max-width: 1140px) {
+      width: 250px;
+    }
+
+  }
+
+  @media all and (max-width: 1023px) {
+    &Content {
+      //padding-left: 10px;
+      //padding-right: 10px;
+      padding-left: 0;
+      padding-right: 10px;
+    }
+
+    &Sidebar {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+
+    &Content {
+      padding-right: 0;
+    }
+    & {
+      display: block;
+
+      & + & {
+        //margin-top: 20px;
+      }
+    }
+
+    &Content {
+      width: 100%;
+    }
+
+    &Sidebar {
+      width: 100%;
+      position: relative;
+      top: auto;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &Title {
+    color: #fff;
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+
+  &Sidebar {
+    padding: 30px 30px 0px 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 0 0 40px 0;
+    color:#000;
+
+    &Submit {
+      @extend .btn;
+      position: relative;
+      top: 25px;
+      width: 100%;
+    }
+
+    &Title {
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 10;
+    }
+
+    &Row {
+      width: 100%;
+      max-width: 100%;
+      border-top: 1px solid #ddd;
+      display: flex;
+
+      &Title {
+        font-size: 14px;
+        font-weight: 600;
+        width: 50%;
+        letter-spacing: .05em;
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+      }
+
+      &Val {
+        font-size: 14px;
+        font-weight: 600;
+        width: 50%;
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &OldPrice{
+    display: inline-block;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      padding: 0 2px;
+      content: "";
+      height: 1px;
+      margin: -1px 0 0 0;
+      transform: rotate(-5deg);
+      transform-origin: center;
+      background: grey;
+    }
+  }
+}

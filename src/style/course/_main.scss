@@ -1,0 +1,363 @@
+.tags {
+
+  &.tac {
+    margin: 0 0 30px 0;
+  }
+
+  a {
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0 5px 0 0;
+    white-space: nowrap;
+    display: inline-block;
+    transition: opacity 0.2s ease 0s;
+    opacity: 1;
+    border-width: 1px;
+    background-color: #ffffff;
+    border: solid 1px #ededed;
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+
+  }
+
+  &.compact {
+    a {
+      line-height: 10px;
+      padding: 3px 4px 2px;
+      text-transform: uppercase;
+      font-family: Source Sans Pro !important;
+      font-size: 10px !important;
+      letter-spacing: 1px !important;
+    }
+  }
+
+  &[data-black="true"] {
+
+    a {
+      background-color: #222;
+      border: solid 1px #222;
+      color: #fff;
+      transition: opacity 0.2s;
+
+      &:hover {
+        color: #fff;
+        opacity: 0.9;
+      }
+    }
+
+  }
+}
+
+.pageTitle.v3 {
+  font-family: Gelasio;
+  padding: 0 0 4px 0;
+}
+
+.pageTitleCategory {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.pageTitleInfo {
+  font-family: Gelasio;
+  line-height: 1.4;
+  font-size: 16px;
+  font-style: italic;
+  color: #757575;
+  margin: 0 0 15px 0;
+}
+
+.main {
+
+  @media all and (max-width: 767px) {
+    margin-top: 25px;
+  }
+
+  &Slider {
+    //max-width: 1440px;
+    padding: 20px 0 30px 0;
+    position: relative;
+    overflow: auto;
+
+    @media all and (max-width: 767px) {
+      padding-bottom: 10px;
+    }
+    .slick-arrow {
+      width: 15px;
+      height: 15px;
+      border: solid 2px #000;
+      border-width: 0 2px 2px 0;
+      position: absolute;
+      content: "";
+      font-size: 0;
+      line-height: 0;
+      background: none;
+      top: 50%;
+      transform: rotate(135deg);
+      transform-origin: center;
+      margin-top: -3px;
+      left: 15px;
+
+      &.slick-next {
+        left: auto;
+        right: 15px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .slick-dots {
+      display: none !important;
+    }
+
+    &List {
+      //display: flex;
+      //align-items: center;
+      //flex-wrap: nowrap;
+      //overflow-x: auto;
+      //white-space: nowrap;
+      padding: 0 30px;
+      //scroll-snap-type: x mandatory;
+    }
+
+    .slick-track {
+      display: flex;
+      align-items: stretch;
+    }
+
+    &El {
+      width: 200px;
+      overflow: hidden;
+      outline: none;
+      display: inline-flex !important;
+      float: none !important;
+      height: auto !important;
+      //padding: 10px ;
+      margin: 0 10px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      //scroll-snap-align: start;
+      align-items: stretch;
+      justify-content: center;
+
+      &:after {
+        content: "";
+        display: block;
+        padding: 56.25%  0 0 0;
+        font-size: 0;
+        line-height: 0;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto !important;
+        //object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+    }
+
+  }
+
+  &Price {
+    font-size: 24px;
+    font-weight: 600;
+
+    &Info {
+      margin: 20px 0 0 0;
+      text-align: center;
+    }
+
+    &Box {
+      &[data-border] {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ededed;
+      }
+    }
+
+    &Old {
+      display: inline-block;
+      font-size: 18px;
+      color: grey;
+      position: relative;
+
+      &:after {
+        content: "a";
+        display: inline-block;
+        font-family: 'alsrubl';
+        padding: 0 0 0 4px;
+
+        html[lang="en"] & {
+          content: "$";
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 0 2px;
+        content: "";
+        height: 1px;
+        margin: -1px 0 0 0;
+        transform: rotate(-5deg);
+        transform-origin: center;
+        background: grey;
+      }
+    }
+
+    &Current {
+      display: block;
+
+      &:after {
+        content: "a";
+        display: inline-block;
+        font-family: 'alsrubl';
+        padding: 0 0 0 4px;
+
+        html[lang="en"] & {
+          content: "$";
+        }
+      }
+    }
+
+  }
+
+  &Buy {
+    @extend .btn;
+    margin: 20px 0 0 0;
+  }
+
+  &Gift {
+    @extend .borderBtn;
+    margin: 20px 0 0 0;
+  }
+
+  &Img {
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &Video {
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+    background: #000;
+    position: relative;
+    padding: 52% 0 0 0;
+
+    video, iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &Inner {
+    @extend .zeroBox;
+    margin: 0px -15px 0 -15px;
+  }
+
+  &Sidebar {
+    width: 33.3333%;
+    padding: 0 15px;
+    vertical-align: top;
+    display: inline-block;
+    @extend .zeroBoxInner;
+    position: sticky;
+    top: 60px;
+
+    & > *:first-child {
+      margin-top: 0 !important;
+    }
+    @media all and (max-width: 1019px) {
+      display: none;
+    }
+  }
+
+  &Content {
+    width: 66.6666%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    @extend .zeroBoxInner;
+
+    &.wide {
+      width: 100%;
+    }
+
+    @media all and (max-width: 1019px) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+}
+
+.mainBottom {
+  & {
+    @extend .zeroBox;
+    margin: 15px -15px 0 -15px;
+  }
+
+  &Sidebar {
+    width: 33.3333%;
+    padding: 0 15px;
+    vertical-align: top;
+    display: inline-block;
+    @extend .zeroBoxInner;
+    position: sticky;
+    top: 0;
+    @media all and (max-width: 1019px) {
+      display: none;
+    }
+  }
+
+  &Content {
+    width: 66.6666%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    @extend .zeroBoxInner;
+
+    &.wide {
+      width: 100%;
+    }
+
+    @media all and (max-width: 1019px) {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+

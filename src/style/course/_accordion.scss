@@ -1,0 +1,68 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  overflow: hidden;
+  border-radius: 10px;
+
+  &El {
+
+    & + & {
+      border-top: 1px solid #ddd;
+    }
+    &Title {
+      background-color: #f7f7f7;
+      color: #444;
+      cursor: pointer;
+      padding: 18px 30px 18px 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      position: relative;
+      transition: 0.4s;
+
+      &.active,
+      &:hover {
+        background-color: #ccc;
+      }
+
+      &:after {
+        content: '\002B'; /* Unicode character for "plus" sign (+) */
+        font-size: 16px;
+        color: #777;
+        border: none;
+        position: absolute;
+        right: 10px;
+        margin-left: 5px;
+      }
+
+      &.active:after {
+        content: "\2212"; /* Unicode character for "minus" sign (-) */
+      }
+    }
+
+    &.fixed &Title {
+      cursor: default !important;
+      background-color: #ccc;
+      &:after {
+        content: "\2212"; /* Unicode character for "minus" sign (-) */
+      }
+    }
+    &Content {
+      padding: 0 18px;
+      background-color: white;
+      color: #000;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    &.fixed &Content {
+      max-height: 3000px !important;
+    }
+  }
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+
+}

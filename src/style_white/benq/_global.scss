@@ -1,0 +1,161 @@
+// global css
+$mainFont: 300 14px/1.42857 'Gill Sans Cyr', Arial, sans-serif;
+$mainColor: #000;
+$mainBgColor: #fff;
+$maxContentWidth: 1460px;
+$minContentWidth: 320px;
+$templateColor: #3b2a78;
+$templateSecondColor: #009feb;
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 200 / 100), only screen and (min-device-pixel-ratio: 1.5) {
+  .dpiTest {
+    width: 20px;
+  }
+}
+
+.wrapPage {
+  margin: 0 auto;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.defWidth {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1220px;
+}
+
+body {
+  word-spacing: .5px;
+  font-feature-settings: "liga";
+  overflow-x: hidden;
+  font-style: normal;
+  text-rendering: optimizelegibility;
+}
+
+.wrapContent {
+  font-size: 0;
+  line-height: 0;
+  word-spacing: 0;
+  letter-spacing: 0;
+  padding: 30px 0;
+  @extend .defWidth;
+  //margin: 0 -10px;
+}
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 0 10px;
+  font: $mainFont;
+  word-spacing: normal;
+  letter-spacing: normal;
+
+  @media all and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.content {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  padding: 0 10px;
+  font: $mainFont;
+  word-spacing: normal;
+  letter-spacing: normal;
+  &.wide {
+    float: none;
+    width: 100%;
+  }
+
+  @media all and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.pageTitle {
+  font: $mainFont;
+  word-spacing: normal;
+  letter-spacing: normal;
+  padding: 0 10px;
+  position: relative;
+  margin: 10px 20px 30px 20px;
+
+  h1 {
+    color: #492582;
+    font-size: 24px;
+    line-height: 26px;
+    padding: 7px 0;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    @media all and (max-width: 959px) {
+      display: block;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    margin: 10px 0px 20px 0px;
+  }
+
+}
+
+.pageSort{
+  float: right;
+  position: relative;
+
+  @media all and (max-width: 959px) {
+    display: block;
+    float: none;
+    width: 208px;
+  }
+
+
+
+  select {
+    background-color: #fafafa;
+    border: solid 1px #ccc;
+    color: #b6b4ba;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    height: 40px;
+    width: 208px;
+    line-height: 40px;
+  }
+
+  &:after {
+    content: '>';
+    font: 22px "Consolas",monospace;
+    color: #aaa;
+    transform: rotate(90deg);
+    right: 10px;
+    top: 8px;
+    padding: 0 0 2px;
+    background: #fafafa;
+    position: absolute;
+    pointer-events: none;
+  }
+
+
+  @media all and (max-width: 767px) {
+    width: 100%;
+
+    select {
+      width: 100%;
+    }
+  }
+
+}

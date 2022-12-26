@@ -1,0 +1,61 @@
+.imageHeader {
+  margin: -40px 0 0 0;
+  position: relative;
+  height: 15.625vw;
+
+  @media all and (max-width: 959px) {
+    margin: -30px 0 0 0;
+  }
+
+
+  &Bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    margin: 0 0 0 -50vw;
+    bottom: 0;
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+  }
+
+  @media all and (max-width: 800px) {
+    height: 150px;
+  }
+
+  .pageTitle {
+    font-size: 48px;
+    line-height: 52px;
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    padding: 0 10px;
+    width: 1220px;
+    margin: 0 0 0 -610px;
+    position: absolute;
+    left: 50%;
+    text-align: left;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  @media all and (max-width: 1220px) {
+    .pageTitle {
+      width: 100vw;
+      margin: 0 0 0 -50vw;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .pageTitle {
+      font-size: 32px;
+      line-height: 36px;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

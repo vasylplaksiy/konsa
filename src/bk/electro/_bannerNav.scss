@@ -1,0 +1,77 @@
+.bannerNav {
+  font-size: 0;
+  line-height: 0;
+  word-spacing: 0;
+  letter-spacing: 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 5px 0 0 0;
+
+  &El {
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.4;
+    word-spacing: normal;
+    text-decoration: none;
+    letter-spacing: normal;
+    color: #000;
+
+    @media all and (max-width: 959px) {
+      width: 100%;
+      display: block;
+    }
+
+    @media all and (max-width: 767px) {
+      padding: 30px;
+    }
+
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &[data-color="white"] {
+      color: #fff;
+    }
+
+    &Title {
+      line-height: 1.2em;
+      font-weight: 700;
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 40px;
+      display: block;
+      font-family: $titleFont;
+
+      @media all and (max-width: 767px) {
+        font-size: 26px;
+      }
+    }
+
+    &SubTitle {
+      margin: 10px 0 0 0;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: $titleFont;
+      display: block;
+
+      @media all and (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+
+    &Btn {
+      @extend .btn;
+      margin: 30px 0 0 0;
+      display: inline-block;
+    }
+  }
+}

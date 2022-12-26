@@ -1,0 +1,118 @@
+input,
+textarea {
+  font-family: $mainFont;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+
+  /*&.showNav,
+  &.showFilter {
+    overflow: hidden !important;
+    height: 100%;
+  }*/
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  /*&.showNav,
+  &.showFilter {
+    overflow: hidden !important;
+    height: 100%;
+  }*/
+  //-webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+.overflowHidden {
+  overflow: hidden !important;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 316px;
+  position: relative;
+  font: $mainFont;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error,
+.errortext,
+.errorText {
+  color: #f93b22;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $mainColor;
+
+  &:hover {
+    text-decoration: underline;
+    color: $mainColor;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $mainColor;
+  }
+
+}
+
+.clearFix {
+  clear: both;
+  float: none;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fn {
+  float: none;
+}
+
+.animateAll {
+  transition: all 0.5s;
+}
+
+.colorRed {
+  color: red;
+}
+
+.dib {
+  display: inline-block;
+}
+

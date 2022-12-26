@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>order</title>
+
+	@@include('include/settings/head_meta_tags.html')
+
+	@@include('include/settings/head_connect_files.html')
+
+</head>
+<body>
+
+@@include('include/global/header.html')
+
+
+<div class="wrapContent">
+	<div class="content wide">
+
+		<h1 class="pageTitle v2">Ещё один клик и курс ваш</h1>
+
+		<form class="order">
+			<div class="orderContent">
+				<div class="orderTitle">Это нужно заполнить</div>
+				<div class="form">
+					<div class="formTitle">LEAVE A REPLY</div>
+					<div class="formList">
+						<div class="formEl wide">
+							<input type="text" value="" placeholder="Имя Фамилия" required>
+						</div>
+						<div class="formEl wide">
+							<input type="email" value="" placeholder="Напишите Email" required>
+						</div>
+						<div class="formEl wide">
+							<div class="formCoupon wide">
+
+								<input type="text" value="" placeholder="Купон, если есть">
+								<span class="formCouponSubmit">Применить</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="orderSidebar">
+				<div class="orderSidebarTitle">СТОИМОСТЬ</div>
+				<div class="orderSidebarRow">
+					<div class="orderSidebarRowTitle">Старая цена</div>
+					<div class="orderSidebarRowVal"><span class="orderOldPrice">3 900Р.</span></div>
+				</div>
+				<div class="orderSidebarRow">
+					<div class="orderSidebarRowTitle">ЦЕНА</div>
+					<div class="orderSidebarRowVal">3 900Р.</div>
+				</div>
+				<div class="orderSidebarRow">
+					<div class="orderSidebarRowTitle">ИТОГ</div>
+					<div class="orderSidebarRowVal orderSidebarTotal">3 900Р.</div>
+				</div>
+				<button type="submit" class="orderSidebarSubmit">Оплатить</button>
+			</div>
+
+		</form>
+
+
+		<div class="accordion">
+			<div class="accordionList">
+				<div class="accordionEl">
+					<div class="accordionElTitle">Section 1</div>
+					<div class="accordionElContent">
+						<p>Lorem ipsum...</p>
+					</div>
+				</div>
+				<div class="accordionEl">
+					<div class="accordionElTitle">Section 2</div>
+					<div class="accordionElContent">
+						<p>Lorem ipsum...</p>
+					</div>
+				</div>
+				<div class="accordionEl">
+					<div class="accordionElTitle">Section 3</div>
+					<div class="accordionElContent">
+						<p>Lorem ipsum...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+@@include('include/global/footer.html')
+
+@@include('include/settings/body_connect_files.html')
+
+</body>
+</html>
